@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #DEDEDE;
+}
+
+#wrap{
+	display:flex;
+	padding: 20px;
+}
+
+#left{
+	width: 60%;
+	float: left;
+}
+
+#slider{
+	width: 37%;
+    height: 500px;
+	float: right;
+}
+
+#header{
+	background-color: #333333;
+	height: 70px;
+	color: white;
+	text-align: center;
+}
+
+#himg{
+	float: left;
+	height: 50px;
+	padding-left: 50px;
+}
+
+#himg>img{
+	padding-top: 30px;
+	padding-bottom: 15px;
+	height: 25px;
+}
+
+#hul ul li{
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+#hul a {
+	/* style */
+	color: white;
+	text-decoration: none;
+}
+
+#hul a:visited {
+	/* style */
+	color: #DEDEDE;
+}
+
+#farticle,#picture,#sarticle,#slider{
+	margin: 20px 20px;
+	background-color: white;
+	box-shadow: 3px 3px #8C8C8C;
+}
+
+.passage{
+	padding: 30px 20px;
+	line-height: 30px;
+}
+
+.passage p{
+	text-indent: 2em;
+}
+
+#picture .passage{
+	padding-left: 30px;
+}
+
+#picture .passage div{
+	padding-left: 60px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	margin:10px 0 25px 25px;
+}
+
+#picture .passage img{
+	width: 150px;
+	height: 150px;
+}
+
+.list{
+	padding-left: 40px;
+}
+
+#sarticle .passage table{
+	border: 1px solid #DEDEDE;
+	width: 100%;
+	border-spacing: 0;
+}
+
+#sarticle .passage table tr td {
+	border: 1px solid #DEDEDE;
+
+}
+
+#sarticle .passage table #tableHeader{
+	background-color: #333333;
+	color: white;
+}
+
+#sarticle .passage table #tableCount{
+	font-family:"Microsoft YaHei";
+	background-color: #DEDEDE;
+}
+
+
+
+#slider table{
+	padding-top: 50px;
+	padding-right: 200px;
+}
+
+#slider label{
+	width: auto;
+	float: right;
+	text-align: right;
+}
+
+#slider table td{
+	width: 600px;
+}
+
+#slider form table tr td p{
+	width: 100%;
+	text-align: left;
+	color: #DEDEDE;
+}
+
+#slider h3{
+	margin-left: 20px;
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: 600;
+    border-left: 3px solid #DCDCDC; 
+}
+
+#slider form input[type="submit"]{
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+}
+
+#footer {
+    display: block;
+	 background-color: #333333;
+	 height: 70px;
+	 color: white;
+	 text-align: center;
+ }
