@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>栅格化布局</title>
+<style type="text/css">
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    .con{
+    	box-sizing: border-box;
+    	padding: 10px;
+    }
+    /*清除浮动*/
+	.row:before, 
+	.row:after {
+	    clear:both;
+	}
+    [class*='col-']{
+    	box-sizing: border-box;
+    	background-color: #dedede;
+    	float: left;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		margin: 10px;
+		border: 1px solid gray;
+    }
+	
+	@media(min-width: 769px){
+		.col-md-1{
+			width: calc(8.333% - 20px);
+		}
+		.col-md-2{
+			width: calc(16.666% - 20px);
+		}
+		.col-md-3{
+			width: calc(25% - 20px);
+		}
+		.col-md-4{
+			width: calc(33.333% - 20px);
+		}
+		.col-md-6{
+			width: calc( 50% - 20px);
+		}
+	}
+	/*大于768px*/
+/*@media (min-width: 769px) {
+	.col-md-1{
+		width: calc( 8.333% - 20px );
+	}
+	.col-md-2{
+		width: calc( 16.666% - 20px );
+	}
+	.col-md-3{
+		width: calc( 25% - 20px );
+	}
+	.col-md-4{
+		width: calc( 33.333% - 20px );
+	}
+	.col-md-6{
+		width: calc( 50% - 20px );
+	}
+}*/
+
+	@media(max-width: 768px){
+		.col-sm-2{
+			width: calc(16.666% - 20px);
+		}
+		.col-sm-3{
+			width: calc(25% - 20px);
+		}
+		.col-sm-6{
+			width: calc(50% - 20px);
+		}
+		.col-sm-8{
+			width: calc(66.66% - 20px);
+		}
+		.col-sm-12{
+			width: calc(100% - 20px);
+		}
+	}
+</style>
+</head>
+<body>
+<div class="con">
+<div class="row">
+	<div class="col-md-4 col-sm-6">a</div>
+	<div class="col-md-4 col-sm-6">a</div>
+	<div class="col-md-4 col-sm-12">a</div>
+</div>
+<div class="row">
+	<div class="col-md-3 col-sm-3">a</div>
+	<div class="col-md-6 col-sm-6">a</div>
+	<div class="col-md-3 col-sm-3">a</div>
+</div>
+<div class="row">
+	<div class="col-md-1 col-sm-2">a</div>
+	<div class="col-md-1 col-sm-2">a</div>
+	<div class="col-md-2 col-sm-8">a</div>
+	<div class="col-md-2 col-sm-3">a</div>
+	<div class="col-md-6 col-sm-3">a</div>
+</div>
+</div>
+</body>
+</html>
